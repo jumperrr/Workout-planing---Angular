@@ -15,7 +15,7 @@ export class TrainingService {
     private _router: Router, ) { }
 
     //ip="192.168.0.95"
-    ip="192.168.43.2"
+    ip="127.0.0.1"
     //ip="localhost"
 
 
