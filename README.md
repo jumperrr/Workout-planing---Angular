@@ -1,48 +1,40 @@
 # Workout-planing---Angular
 
-Celem tej pracy jest zaprojektowanie i realizacja aplikacji umożliwiającej planowanie treningów sportowych. 
-Stworzenie takiej aplikacji ma na celu ułatwienie planowania treningów sportowych, poprzez przyjazny i możliwie prosty interfejs aplikacji internetowej. 
-Zakres pracy obejmuje następujące zagadnienia:
+This application is designed to assist users in planning their sports training routines by providing a user-friendly and straightforward web application interface. The application allows users to create a training plan by selecting exercises and setting exercise parameters. Users can access the application through any web browser.
 
-- Projekt i implementacja bazy danych,
-- Stworzenie serwera REST,
-- Implementacja aplikacji klienckiej
+ Functional Requirements
+  - User registration
+  - User login
+  - Displaying available exercises
+  - Grouping exercises into categories
+  - Displaying user's training plans
+  - Adding a new training plan
+  - Adding exercises to a training plan
+  - Entering the number of repetitions and weight for an exercise
+  - Confirming the completion of an exercise
+  - Editing the number of repetitions and weight
+  - Viewing statistics for an exercise
+  - Removing an exercise from a training plan
+  - Deleting a training plan
+  - User logout
 
-Aplikacja umożliwia tworzenie planu treningowego, poprzez wprowadzenie przez użytkownika wybranych ćwiczeń i parametrów ćwiczenia do danego planu. 
-Użytkownik może korzystać z aplikacji, używając przeglądarki internetowej.
+ Views
+  - Login window
+  - Overview of available exercises (available to all)
+  - Review of user's plans (available to logged-in users)
+  - View of a specific plan (available to logged-in users)
+  - Review of exercise statistics (available to logged-in users)
+  - View for adding/editing an exercise (available to logged-in users)
 
-Wymagania funkcjonalne:
-- Rejestracja użytkownika,
-- Logowanie użytkownika,
-- Wyświetlanie dostępnych ćwiczeń,
-- Grupowanie ćwiczeń w kategorie,
-- Wyświetlanie planów treningowych użytkownika,
-- Dodawanie nowego planu treningu,
-- Dodawanie ćwiczenia do planu treningu,
-- Wprowadzanie ilości powtórzeń i obciążenia dla danego ćwiczenia,
-- Zatwierdzenie wykonania ćwiczenia,
-- Edycja ilości powtórzeń i obciążenia,
-- Przeglądanie statystyk danego ćwiczenia,
-- Usuwanie ćwiczenia z planu treningu,
-- Usuwanie planu treningu,
-- Wylogowanie użytkownika.
-
-Widoki:
-- Oknko logowania
-- Podgląd dostępnych ćwiczeń (dostępne dla wszystkich)
-- Przegląd planów użytkownika (dostępne dla zalogowanego użyttkownika)
-- Widok danego planu (dostępne dla zalogowanego użyttkownika)
-- Przegląd statystyk danego ćwiczenia (dostępne dla zalogowanego użytkownika)
-- Widok dodania/edycji ćwiczenia (dostępne dla zalogowanego użyttkownika)
- 
-Baza danych: MySQL XAMPP
-Backend: Node.js
-Frontend: Angular
-
-Baza danych - Tabele:
-- user
-- workoutplan
-- training
-- category
-- exercise
-- unit
+  Technology Stack
+   - Database: MySQL XAMPP
+   - Backend: Node.js
+   - Frontend: Angular 8
+     
+  Database Tables
+   - user - stores user information
+   - workoutplan - holds data about workout plans
+   - training - contains training sessions details
+   - category - lists categories for grouping exercises
+   - exercise - includes exercise details
+   - unit - records units for exercises, like reps and weight
